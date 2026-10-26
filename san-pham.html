@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Danh mục sản phẩm | Hyundai CNS Vietnam</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap&subset=latin,vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/san-pham.css"></head><body data-page="catalog" data-cta="quote">
+<div data-site-header></div>
+<main class="wrap">
+<div class="top"><h1>Danh mục thiết bị bảo hộ lao động</h1>
+<p>Chọn sản phẩm cần mua rồi gửi danh sách để nhận báo giá theo số lượng. Giá, chứng nhận và datasheet được cung cấp khi báo giá.</p></div>
+<div class="tools"><input type="search" id="q" placeholder="Tìm theo tên sản phẩm, mã model, thương hiệu" aria-label="Tìm sản phẩm"><select id="b" aria-label="Lọc theo thương hiệu"></select></div>
+<div class="chips" id="chips" role="group" aria-label="Nhóm sản phẩm"></div>
+<p class="count" id="cnt" aria-live="polite"></p>
+<div class="grid" id="grid"></div><div class="more"><button class="btn btn-secondary" id="more" type="button">Xem thêm sản phẩm</button></div>
+</main>
+<div data-site-footer></div>
+
+<dialog id="dd" aria-labelledby="dt"><div class="dh"><div><p class="br" id="db"></p><h2 id="dt"></h2></div><button class="x" data-close aria-label="Đóng">&times;</button></div>
+<div class="db"><div class="tw"><table class="spec"><thead><tr><th>Thông số</th><th>Giá trị</th></tr></thead><tbody id="ds"></tbody></table></div>
+<p class="note">Các mục "Liên hệ báo giá" và "Cung cấp khi báo giá" sẽ được cập nhật từ dữ liệu của Hyundai CNS và nhà sản xuất.</p></div>
+<div class="df"><button class="btn btn-secondary" data-close>Đóng</button><button class="btn btn-primary" id="dadd">Thêm vào danh sách báo giá</button></div></dialog>
+
+<dialog id="qd" aria-labelledby="qt"><div class="dh"><h2 id="qt">Danh sách báo giá</h2><button class="x" data-close aria-label="Đóng">&times;</button></div>
+<div class="db"><ul class="ql" id="ql"></ul><p class="empty" id="qe">Chưa có sản phẩm. Chọn "Thêm vào báo giá" trên thẻ sản phẩm.</p></div>
+<div class="df"><button class="btn btn-secondary" id="qcopy">Sao chép danh sách</button><a class="btn btn-primary" id="qmail" href="#">Gửi email yêu cầu báo giá</a></div></dialog>
+
+<script src="data/products.js"></script>
+<script src="assets/js/layout.js" defer></script>
+<script src="assets/js/catalog.js" defer></script></body></html>
